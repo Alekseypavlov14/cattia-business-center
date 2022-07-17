@@ -1,0 +1,14 @@
+.ContactText {
+  color: #e3e3e3;
+  font-size: 16px;
+}
+
+.ContactLink {
+  color: #ffff99;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.ContactLink:hover {
+  text-decoration: underline;
+}
