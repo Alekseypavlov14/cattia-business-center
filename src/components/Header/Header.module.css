@@ -1,0 +1,11 @@
+.Header {
+  --bg-color: rgb(24, 44, 55);
+  --font-color: #ffffff;
+  --font-color-hover: #82cacb;
+  --contact-color: #5f9096;
+
+  width: 100%;
+  height: 142px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
