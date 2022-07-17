@@ -12,11 +12,11 @@
 
 @media (max-width: 767.98px) {
   .Container {
-    max-width: 410px;
+    max-width: 540px;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 570px) {
   .Container {
     max-width: none;
   }
