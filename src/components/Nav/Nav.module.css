@@ -15,7 +15,7 @@
     height: 100vh;
     padding-top: 150px;
     left: 0;
-    top: -100vh;
+    top: -150vh;
     transition: top 0.3s;
     background-color: var(--bg-color);
   }

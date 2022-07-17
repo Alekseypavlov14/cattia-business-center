@@ -1,3 +1,9 @@
 .Logo {
   width: 170px;
 }
+
+@media (max-width: 767.98px) {
+  .Logo {
+    width: 100px;
+  }
+}
