@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
+import { Wrapper } from './components/Wrapper/Wrapper'
 
 export function App() {
   return (
-    <>
+    <Wrapper>
       <Routes>
         <Route path='/' element={<div />} />
         <Route path='/presentation' element={<div />} />
@@ -11,6 +12,6 @@ export function App() {
         <Route path='/gallery' element={<div />} />
         <Route path='/contact' element={<div />} />
       </Routes>
-    </>
+    </Wrapper>
   )
 }
