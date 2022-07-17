@@ -8,7 +8,3 @@
 .NavLink:hover {
   color: #74aeb2;
 }
-
-.NavLink:not(:last-child) {
-  margin-right: 24px;
-}

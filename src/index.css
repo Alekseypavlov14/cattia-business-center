@@ -25,3 +25,7 @@ html, body {
 #root {
   height: 100%;
 }
+
+.--opened {
+  top: 0;
+}

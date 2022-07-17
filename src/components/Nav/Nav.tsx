@@ -6,13 +6,25 @@ interface NavProps {}
 
 export const Nav: FC<NavProps> = () => {
   return (
-    <div className={styles.Nav}>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='/presentation'>Presentation</NavLink>
-      <NavLink to='/facilities'>Facilities</NavLink>
-      <NavLink to='/rates'>Rates</NavLink>
-      <NavLink to='/gallery'>Gallery</NavLink>
-      <NavLink to='/contact'>Contact</NavLink>
+    <div id='Nav' className={styles.Nav}>
+      <div className={styles.Link}>
+        <NavLink to='/'>Home</NavLink>
+      </div>
+      <div className={styles.Link}>
+        <NavLink to='/presentation'>Presentation</NavLink>
+      </div>
+      <div className={styles.Link}>
+        <NavLink to='/facilities'>Facilities</NavLink>
+      </div>
+      <div className={styles.Link}>
+        <NavLink to='/rates'>Rates</NavLink>
+      </div>  
+      <div className={styles.Link}>
+        <NavLink to='/gallery'>Gallery</NavLink>
+      </div>
+      <div className={styles.Link}>
+        <NavLink to='/contact'>Contact</NavLink>
+      </div>
     </div>
   )
 }

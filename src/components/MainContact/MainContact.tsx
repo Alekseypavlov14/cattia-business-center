@@ -6,7 +6,7 @@ interface MainContactProps {}
 export const MainContact: FC<MainContactProps> = () => {
   return (
     <>
-      <span className={styles.ContactText}>Reception CATTIA: </span>
+      <span className={styles.ContactText}>Reception CATTIA: &nbsp;</span>
       <a 
         href='tel:+40 774 035 612'
         className={styles.ContactLink}
