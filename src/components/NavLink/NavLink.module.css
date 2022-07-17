@@ -1,0 +1,14 @@
+.NavLink {
+  transition: all 0.3s;
+  padding: 10px 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.NavLink:hover {
+  color: #74aeb2;
+}
+
+.NavLink:not(:last-child) {
+  margin-right: 24px;
+}

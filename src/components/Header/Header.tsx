@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { Container } from '../Container/Container'
 import { Logo } from '../Logo/Logo'
 import { MainContact } from '../MainContact/MainContact'
+import { Nav } from '../Nav/Nav'
 import styles from './Header.module.css'
 
 interface HeaderProps {}
@@ -13,7 +14,11 @@ export const Header: FC<HeaderProps> = () => {
         <div className={styles.MainContact}>
           <MainContact />
         </div>
-        <Logo />
+
+        <div className={styles.HeaderContent}>
+          <Logo />
+          <Nav />
+        </div>
       </Container>
     </div>
   )
