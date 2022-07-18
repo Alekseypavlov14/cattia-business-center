@@ -25,6 +25,20 @@
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  .LogoContainer {
+    width: 135px;
+    margin: 0 auto;
+  }
+  .FooterContent {
+    flex-direction: column;
+  }
+  .FooterData {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .Copyright {
   color: #fff;
   font-size: 14px;
