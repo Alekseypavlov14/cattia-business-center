@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Home } from './pages/Home/Home'
 
@@ -14,6 +15,7 @@ export function App() {
         <Route path='/gallery' element={<div />} />
         <Route path='/contact' element={<div />} />
       </Routes>
+      <Footer />
     </>
   )
 }

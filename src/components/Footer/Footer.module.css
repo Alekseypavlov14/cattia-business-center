@@ -1,0 +1,50 @@
+.Footer {
+  background: #19313e;
+  width: 100%;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.LogoContainer {
+  flex: 0 0 135px;
+}
+
+.LogoContainer img {
+  width: 100%;
+}
+
+.FooterData {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Copyright {
+  color: #fff;
+  font-size: 14px;
+  word-spacing: 2px;
+  max-width: 33%;
+}
+
+.Link {
+  color: #82cacb;
+  display: flex;
+  align-items: center;
+}
+
+.Media {
+  display: flex;
+  gap: 10px;
+}
+
+.MainContact {
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+}
+
