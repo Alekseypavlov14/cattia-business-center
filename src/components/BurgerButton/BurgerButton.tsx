@@ -1,19 +1,23 @@
 import { FC } from 'react'
+import { openedSelector, toggle } from '../../features/burger/burgerSlice'
+import { useAppSelector } from '../../hooks/useAppSelector'
+import { useDispatch } from 'react-redux'
 import styles from './BurgerButton.module.css'
+import cn from 'classnames'
 
 interface BurgerButtonProps {}
 
 const BurgerButton: FC<BurgerButtonProps> = () => {
-  const toggleMenu = () => {
-    document.getElementById('Nav')?.classList.toggle('--opened')
-    document.getElementById('burger-button')?.classList.toggle(styles.Clicked)
-  }
+  const opened = useAppSelector(openedSelector)
+  const dispatch = useDispatch()
+
+  const toggleMenu = () => dispatch(toggle())
 
   return (
     <div className={styles.BurgerBackground}>
-      <div 
+      <div
         id='burger-button'
-        className={styles.BurgerButton}
+        className={cn(styles.BurgerButton, opened && styles.Clicked)}
         onClick={toggleMenu}
       >
         <span />

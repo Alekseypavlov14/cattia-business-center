@@ -20,6 +20,10 @@
     background-color: var(--bg-color);
   }
 
+  .Opened {
+    top: 0;
+  }
+
   .Link {
     font-size: 20px;
   }
