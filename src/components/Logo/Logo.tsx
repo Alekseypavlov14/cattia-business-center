@@ -7,7 +7,7 @@ export const Logo: FC<LogoProps> = () => {
   return (
     <img 
       className={styles.Logo}
-      src='logo-cattia.png' 
+      src='logo/logo-cattia.png' 
       alt='logo'
     />
   )
