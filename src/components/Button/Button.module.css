@@ -8,10 +8,21 @@
   text-align: center;
   cursor: pointer;
   background: #eee;
+  transition: all 0.3s;
 }
 .Outlined {
   font-weight: 600;
   border: 1px solid #313131;
   background-color: transparent;
   border-radius: 5px;
+}
+.Button:hover {
+  transform: translateY(-5px) scale(103%);
+  background: #efefef;
+  color: #000;
+}
+.Outlined:hover {
+  transform: translateY(-5px) scale(103%);
+  background: #313131;
+  color: #fff;
 }

@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 interface ButtonProps {
   children: string
-  onClick: (e: MouseEvent<HTMLButtonElement>) => void
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void
   outlined?: boolean
 }
 

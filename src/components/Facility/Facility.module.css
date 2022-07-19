@@ -1,0 +1,22 @@
+/* .Facility {
+
+} */
+.ImageContainer {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 300px;
+  overflow: hidden;
+}
+.ImageContainer img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.ButtonContainer {
+  margin: 20px 0px;
+  text-align: center;
+}
+.TextContainer {
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 18px;
+}

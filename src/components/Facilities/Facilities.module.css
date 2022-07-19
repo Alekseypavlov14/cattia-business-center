@@ -1,7 +1,22 @@
-/* .Facilities {} */
+.Facilities {
+  width: 100%;
+}
 .TitleBlock {
   margin: 30px 0px;
 }
 .PreTitle {
   margin-bottom: 10px;
+}
+.FacilitiesContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 60px 20px;
+  gap: 40px;
+}
+
+@media (max-width: 1020px) {
+  .FacilitiesContent {
+    flex-direction: column;
+    gap: 60px;
+  }
 }

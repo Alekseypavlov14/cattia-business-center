@@ -6,7 +6,6 @@
 .FooterContent {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   align-items: center;
   gap: 20px;
   padding: 20px 0px;
@@ -29,6 +28,7 @@
   font-size: 14px;
   word-spacing: 2px;
   max-width: 25%;
+  line-height: 1.5em;
 }
 
 .Link {
@@ -60,5 +60,6 @@
     font-size: 14px;
     word-spacing: 2px;
     max-width: none;
+    text-align: center;
   }
 }
