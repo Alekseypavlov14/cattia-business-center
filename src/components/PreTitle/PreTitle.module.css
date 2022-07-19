@@ -1,6 +1,7 @@
-.Headline {
+.PreTitle {
   font-size: 24px;
-  color: #000;
+  color: #19313e;
+  line-height: 1.3em;
 }
 .Center {
   text-align: center;

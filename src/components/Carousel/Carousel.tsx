@@ -14,33 +14,33 @@ export const Carousel: FC<CarouselProps> = () => {
     <Swiper
       className={styles.Swiper}
       modules={[Autoplay, Navigation, Pagination]}
-      pagination={{
-        clickable: true
-      }}
       navigation
       autoHeight
       slidesPerView={1}
       spaceBetween={0}
-      loop={true}
+      loop
+      speed={2500}
+      pagination={{
+        clickable: true
+      }}
       autoplay={{
         delay: 1000,
         stopOnLastSlide: false,
         disableOnInteraction: true
       }}
-      speed={2500}
     >
       <SwiperSlide className={styles.Slice}>
-        <img src='home-1.jpg' alt='' />
+        <img src='home/home-1.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide className={styles.Slice}>
-        <img src='home-2.jpg' alt='' />
+        <img src='home/home-2.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide className={styles.Slice}>
-        <img src='home-3.jpg' alt='' />
+        <img src='home/home-3.jpg' alt='' />
       </SwiperSlide>
 
       <div className={styles.Decor}>
-        <img src="home-decor.png" alt="" />
+        <img src="home/home-decor.png" alt="" />
       </div>
     </Swiper>
   )
