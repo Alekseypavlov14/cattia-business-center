@@ -1,0 +1,17 @@
+.Button {
+  padding: 0.6em 1.5em;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #313131;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  background: #eee;
+}
+.Outlined {
+  font-weight: 600;
+  border: 1px solid #313131;
+  background-color: transparent;
+  border-radius: 5px;
+}
