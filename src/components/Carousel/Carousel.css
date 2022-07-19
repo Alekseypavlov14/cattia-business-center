@@ -1,0 +1,19 @@
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 50%;
+  background-color: #6bb1b3;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.swiper-button-prev:hover::after, .swiper-button-next:hover::after {
+  background-color: #e79d19;
+}
+.swiper-pagination-bullet {
+  background: #e79d19;
+  width: 3vh;
+  height: 3vh;
+  margin: 0px 1vh !important;
+}

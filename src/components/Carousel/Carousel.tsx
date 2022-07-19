@@ -1,74 +1,47 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper'
 import styles from './Carousel.module.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import './Carousel.css'
 
 interface CarouselProps {}
 
 export const Carousel: FC<CarouselProps> = () => {
-  const [currentImage, setCurrentImage] = useState(0)
-
-  const leftValue = -100 * currentImage + '%'
-
-  const moveLeft = () => setCurrentImage(index => {
-    let newIndex = index - 1
-
-    if (newIndex < 0) newIndex = 2
-    if (newIndex > 2) newIndex = 0
-
-    return newIndex
-  })
-  const moveRight = () => setCurrentImage(index => {
-    let newIndex = index + 1
-
-    if (newIndex < 0) newIndex = 2
-    if (newIndex > 2) newIndex = 0
-
-    return newIndex
-  })
-
   return (
-    <div className={styles.Carousel}>
-      <div className={styles.CarouselWrapper} style={{marginLeft: leftValue}}>
-        <div className={styles.CarouselImageContainer}>
-          <img 
-            className={styles.CarouselImage}
-            src='home-1.jpg' 
-            alt='' 
-          />
-        </div>
-        <div className={styles.CarouselImageContainer}>
-          <img 
-            className={styles.CarouselImage}
-            src='home-2.jpg' 
-            alt='' 
-          />
-        </div>
-        <div className={styles.CarouselImageContainer}>
-          <img 
-            className={styles.CarouselImage}
-            src='home-3.jpg' 
-            alt='' 
-          />
-        </div>
-      </div>
+    <Swiper
+      className={styles.Swiper}
+      modules={[Autoplay, Navigation, Pagination]}
+      pagination={{
+        clickable: true
+      }}
+      navigation
+      autoHeight
+      slidesPerView={1}
+      spaceBetween={0}
+      loop={true}
+      autoplay={{
+        delay: 1000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true
+      }}
+      speed={2500}
+    >
+      <SwiperSlide className={styles.Slice}>
+        <img src='home-1.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide className={styles.Slice}>
+        <img src='home-2.jpg' alt='' />
+      </SwiperSlide>
+      <SwiperSlide className={styles.Slice}>
+        <img src='home-3.jpg' alt='' />
+      </SwiperSlide>
 
-      <div className={styles.Decorator}>
-        <img src='home-decor.png' alt='' />
+      <div className={styles.Decor}>
+        <img src="home-decor.png" alt="" />
       </div>
-
-      <div className={styles.Controllers}>
-        <button 
-          className={styles.ControllerButton}
-          onClick={moveLeft}
-        >
-          	&#8249;
-        </button>
-        <button 
-          className={styles.ControllerButton}
-          onClick={moveRight}
-        >
-          	&#8250;
-        </button>
-      </div>
-    </div>
+    </Swiper>
   )
 }
