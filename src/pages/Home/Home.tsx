@@ -10,6 +10,10 @@ export const Home: FC<HomeProps> = () => {
     <div className={styles.Home}>
       <Carousel />
       <Facilities />
+
+      <div className={styles.ImageContainer}>
+        <img src="home/home-page-cattia-wide-1.jpg" alt="" />
+      </div>
     </div>
   )
 }
