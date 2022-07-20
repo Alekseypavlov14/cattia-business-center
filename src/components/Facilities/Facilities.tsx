@@ -6,6 +6,10 @@ import { Headline } from '../Headline/Headline'
 import { PreTitle } from '../PreTitle/PreTitle'
 import styles from './Facilities.module.css'
 
+import facility1 from './../../assets/home/facilities/conference-hall.jpg'
+import facility2 from './../../assets/home/facilities/exhibition-area.jpg'
+import facility3 from './../../assets/home/facilities/co-working.jpg'
+
 interface FacilitiesProps {}
 
 export const Facilities: FC<FacilitiesProps> = () => {
@@ -27,7 +31,7 @@ export const Facilities: FC<FacilitiesProps> = () => {
 
       <div className={styles.FacilitiesContent}>
         <Facility>
-          <img src='home/facilities/conference-hall.jpg' alt='' />
+          <img src={facility1} alt='' />
           <Button outlined>
             Conference
           </Button>
@@ -37,7 +41,7 @@ export const Facilities: FC<FacilitiesProps> = () => {
           </>
         </Facility>
         <Facility>
-          <img src='home/facilities/exhibition-area.jpg' alt='' />
+          <img src={facility2} alt='' />
           <Button outlined>
             Exhibition Area
           </Button>
@@ -47,7 +51,7 @@ export const Facilities: FC<FacilitiesProps> = () => {
           </>
         </Facility>
         <Facility>
-          <img src='home/facilities/co-working.jpg' alt='' />
+          <img src={facility3} alt='' />
           <Button outlined>
             Co-Working
           </Button>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Facility.module.css'
 
 interface FacilityProps {
-  children: [ReactNode, ReactNode, ReactNode]
+  children: [ReactNode, ReactNode, ReactNode?]
 }
 
 export const Facility: FC<FacilityProps> = ({ children }) => {
@@ -23,9 +23,11 @@ export const Facility: FC<FacilityProps> = ({ children }) => {
       >
         {children[1]}
       </div>
-      <div className={styles.TextContainer}>
-        {children[2]}
-      </div>
+      {children[2] && (
+        <div className={styles.TextContainer}>
+          {children[2]}
+        </div>
+      )}
     </div>
   )
 }

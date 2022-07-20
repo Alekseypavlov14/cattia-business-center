@@ -7,6 +7,11 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import './Carousel.css'
 
+import image1 from './../../assets/home/home-1.jpg'
+import image2 from './../../assets/home/home-2.jpg'
+import image3 from './../../assets/home/home-3.jpg'
+import decor from './../../assets/home/home-decor.png'
+
 interface CarouselProps {}
 
 export const Carousel: FC<CarouselProps> = () => {
@@ -30,17 +35,17 @@ export const Carousel: FC<CarouselProps> = () => {
       }}
     >
       <SwiperSlide className={styles.Slice}>
-        <img src='home/home-1.jpg' alt='' />
+        <img src={image1} alt='' />
       </SwiperSlide>
       <SwiperSlide className={styles.Slice}>
-        <img src='home/home-2.jpg' alt='' />
+        <img src={image2} alt='' />
       </SwiperSlide>
       <SwiperSlide className={styles.Slice}>
-        <img src='home/home-3.jpg' alt='' />
+        <img src={image3} alt='' />
       </SwiperSlide>
 
       <div className={styles.Decor}>
-        <img src="home/home-decor.png" alt="" />
+        <img src={decor} alt="" />
       </div>
     </Swiper>
   )

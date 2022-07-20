@@ -4,6 +4,12 @@ import { Logo } from '../Logo/Logo'
 import { MainContact } from '../MainContact/MainContact'
 import styles from './Footer.module.css'
 
+import emailIcon from './../../assets/icon/icon-email.png'
+import telIcon from './../../assets/icon/icon-tel.png'
+import locationIcon from './../../assets/icon/icon-location.png'
+import facebookIcon from './../../assets/icon/icon-facebook.png'
+import youtubeIcon from './../../assets/icon/icon-youtube.png'
+
 interface FooterProps {}
 
 export const Footer: FC<FooterProps> = () => {
@@ -21,22 +27,22 @@ export const Footer: FC<FooterProps> = () => {
 
           <div className={styles.ContactInfo}>
             <div className={styles.Link}>
-              <img src='icon/icon-email.png' alt=''/> cattia@metropolabrasov.ro
+              <img src={emailIcon} alt=''/> cattia@metropolabrasov.ro
             </div>
             <div className={styles.Link}>
-              <img src='icon/icon-tel.png' alt=''/>tel:+40268547616
+              <img src={telIcon} alt=''/>tel:+40268547616
             </div>
             <div className={styles.Link}>
-              <img src='icon/icon-location.png' alt=''/>https://goo.gl/maps/cSq9skRUm82z1ouh6
+              <img src={locationIcon} alt=''/>https://goo.gl/maps/cSq9skRUm82z1ouh6
             </div>
           </div>
 
           <div className={styles.Media}>
             <div className={styles.MediaIcon}>
-              <img src='icon/icon-facebook.png' alt='' />
+              <img src={facebookIcon} alt='' />
             </div>
             <div className={styles.MediaIcon}>
-              <img src='icon/icon-youtube.png' alt='' />
+              <img src={youtubeIcon} alt='' />
             </div>
           </div>
         </div>
