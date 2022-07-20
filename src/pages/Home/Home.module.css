@@ -8,7 +8,6 @@
   text-align: center;
   background-position: center;
   transform: translateX(calc((100% - 100vw) / -2));
-  height: fit-content;
 }
 .ImageContainer img {
   width: auto;
