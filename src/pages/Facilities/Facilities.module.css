@@ -1,0 +1,23 @@
+.Facilities {
+  flex: 1 0 auto;
+  padding: 100px 0px;
+  position: relative;
+}
+.FacilitiesContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.FacilitiesContent div {
+  transform: scale(90%);
+}
+.BgImage {
+  position: fixed;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}

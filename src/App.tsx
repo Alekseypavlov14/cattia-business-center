@@ -10,8 +10,8 @@ export function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/presentation' element={<Facilities />} />
-        <Route path='/facilities' element={<div />} />
+        <Route path='/presentation' element={<div />} />
+        <Route path='/facilities' element={<Facilities />} />
         <Route path='/rates' element={<div />} />
         <Route path='/gallery' element={<div />} />
         <Route path='/contact' element={<div />} />

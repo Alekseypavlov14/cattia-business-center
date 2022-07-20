@@ -1,5 +1,6 @@
 .Facilities {
   width: 100%;
+  padding: 80px 0px;
 }
 .TitleBlock {
   margin: 30px 0px;
@@ -10,7 +11,7 @@
 .FacilitiesContent {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 60px 20px;
+  padding: 20px;
   gap: 40px;
 }
 
