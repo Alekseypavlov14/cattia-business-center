@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
 }
 .FacilitiesContent div {
@@ -15,7 +15,7 @@
 }
 .BgImage {
   position: fixed;
-  max-width: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: -1;
