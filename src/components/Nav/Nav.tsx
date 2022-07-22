@@ -36,20 +36,6 @@ export const Nav: FC<NavProps> = () => {
       >
         <NavLink to='/facilities'>Facilities</NavLink>
       </div>
-
-      <div 
-        className={styles.Link}
-        onClick={closeMenuHandler}
-      >
-        <NavLink to='/rates'>Rates</NavLink>
-      </div>  
-
-      <div 
-        className={styles.Link}
-        onClick={closeMenuHandler}
-      >
-        <NavLink to='/gallery'>Gallery</NavLink>
-      </div>
       
       <div 
         className={styles.Link}

@@ -1,0 +1,11 @@
+.SocialMediaDashboard {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  gap: 10px;
+}
+
+.SocialMedia img {
+  max-width: 42px;
+  max-height: 42px;
+}
