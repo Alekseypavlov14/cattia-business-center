@@ -1,0 +1,40 @@
+.Contacts {
+  flex: 1 0 auto;
+  padding-bottom: 50px;
+}
+
+.BgImageContainer {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.BgImageContainer img {
+  max-width: 100%;
+}
+
+.ContactList {
+  padding: 40px 0px;
+  text-align: center;
+}
+.ContactListTitle {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+.PreTitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Links {
+  padding: 20px 0px;
+}
+.Link {
+  display: block;
+  color: #2091e1;
+  font-size: 18px;
+}
+.Link:not(:last-child) {
+  margin-bottom: 28px;
+}
