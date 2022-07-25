@@ -1,0 +1,72 @@
+.Presentation {
+  width: 100%;
+  flex: 1 0 auto;
+  padding: 60px 0px;
+}
+
+.TitleBlock {
+  padding: 20px 0px;
+}
+
+.TitleBlock div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.PresentationContent {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.Image {
+  max-width: 100%;
+  margin: 10px 0px;
+}
+
+.PresentationSection {
+  padding: 20px 0px;
+}
+
+.Title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.Content {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.List {
+  list-style: none;
+}
+
+.ListItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.ListItem:not(:last-child)::after {
+  content: ';';
+}
+
+.ListItemMark {
+  width: 26px;
+  margin-right: 10px;
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+.Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 40px;
+}

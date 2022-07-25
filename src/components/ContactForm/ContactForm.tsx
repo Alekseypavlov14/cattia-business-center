@@ -13,7 +13,7 @@ export const ContactForm: FC<ContactFormProps> = () => {
 
   const submitHandler = () => {
     if (!name || !email || !message) {
-      alert('* fields are required')
+      return alert('* fields are required')
     }
     alert('The message is sent')
   }
