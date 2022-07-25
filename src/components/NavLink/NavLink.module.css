@@ -8,3 +8,10 @@
 .NavLink:hover {
   color: #74aeb2;
 }
+
+.ActiveNavLink {
+  transition: all 0.3s;
+  padding: 10px 0px;
+  color: #74aeb2;
+  text-transform: uppercase;
+}

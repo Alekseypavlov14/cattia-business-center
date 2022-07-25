@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink as ReactNavLink } from 'react-router-dom'
 import styles from './NavLink.module.css'
 
 interface NavLinkProps {
@@ -9,10 +9,12 @@ interface NavLinkProps {
 
 export const NavLink: FC<NavLinkProps> = ({ to, children }) => {
   return (
-    <Link 
+    <ReactNavLink 
       to={to}
       children={children}
-      className={styles.NavLink}
+      className={({ isActive }) => 
+        isActive ? styles.ActiveNavLink : styles.NavLink
+      }
     />
   )
 }
